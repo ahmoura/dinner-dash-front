@@ -1,109 +1,105 @@
-* {
-    box-sizing: border-box;
+/* about all page */
+*{     
     font-family: 'Open Sans', sans-serif;
-    
-}
-
-body{
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 
-p{
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    color: #BBBBBB;
-}
 
-h1{
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.login_container{
-    display: flex;
-    justify-content: space-between;
+/* about full container*/
+.fcontainer{
+    display: flex;  
     flex-direction: row;
-    flex-grow: 1;
-    height: 97.5vh;
 }
 
-.div_img{
-    display: flex;
-    height: 100vh;
-    width: 65%;
+/* about left container */
+.lcontainer{
+    height: 101vh;
+    width: 70vw;
+    background-image: url(../../imagens/sabri-tuzcu-365440.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover ;
 }
 
-.div_text{
+.main_img {
+    height: 100%;
+    width: 100%;
+}
+
+/* about right container */
+.rcontainer {
+    display:flex;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.rcontent{
     display: flex;
     flex-direction: column;
-    padding-top: 8%;
-    padding-right: 5%;
+    align-self: center;
+}
+
+.rcontent h1{
+    padding-bottom: 6vw;
+    font-size: 5vh;
+}
+
+.rcontent p{
+    color: #AAAAAA;
     font-size: 2vh;
 }
 
-.login_img{
-    width: 100%;
-    height: 100%;
-}
-
-
-.input_email{
+.data_input{
     width: 25vw;
     height: 5vh;
-    background-color: #FFFFFF;
-    border: 2px solid #BBBBBB;
+    border: 1px solid #BBBBBB;
     border-radius: 5px;
+    margin: 1vh;
+    font-size: 2vh;
 }
 
-.input_senha{
-    width: 25vw;
-    height: 5vh;
-    background-color: #FFFFFF;
-    border: 2px solid #BBBBBB;
-    border-radius: 5px;
-}
-
-
-.button_entrar{
-    width: 25vw;
-    height: 5vh;
+.button_signin,.button_signup:hover{
+    color: #FFFFFF;
     background-color: #39cc6c;
     border: 2px solid #39cc6c;
-    color: #FFFFFF;
-    border-radius: 5px;
 }
 
-.button_entrar:hover{
-    width: 25vw;
-    height: 5vh;
+.button_signup,.button_signin:hover{
+    color: #39cc6c;
     background-color: #FFFFFF;
     border: 2px solid #39cc6c;
-    color: #39cc6c;
-    border-radius: 5px;
 }
 
-.button_cadastro{
-    width: 25vw;
-    height: 5vh;
-    background-color: #FFFFFF;
-    border: 2px solid #39cc6c;
-    color: #39cc6c;
-    border-radius: 5px;
+.rcontent hr{
+    border: 1px solid #DDDDDD;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
 }
 
-.button_cadastro:hover{
-    width: 25vw;
-    height: 5vh;
-    background-color: #39cc6c;
-    color: #FFFFFF;
-    border-radius: 5px;
+@media (max-width: 340px) {
+	.lcontainer {
+        background-size: auto;
+        display: flex;
+        visibility: collapse;
+    }
+    .data_input{
+        width: 70vw;
+        font-size: 3vh;
+    }
+    .rcontent h1{
+        font-size: 4vh; 
+        padding-top: 15vh;
+    }
+    .rcontent{
+        width: 75vw;
+        height: 100%;
+    }
 }
 
-.text_hr{
-    margin-top: 15%;
-    margin-bottom: 10%;
-    color: #EEEEEE;
-    width: 25vw;
-    height: 2px;
-}
+@media (max-height: 300px) {
+    .data_input{
+        border-radius: 2px;
+    }

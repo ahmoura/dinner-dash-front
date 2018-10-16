@@ -5,33 +5,40 @@
 <head>
     <meta charset= "UTF-8">
     <title>Login - Dinner Dash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="../../css/autenticacao/login.css">
 </head>
 
 <body>
-    <div class="login_container">
 
-        <div class="div_img">
-                <img class="login_img" src="../../imagens/sabri-tuzcu-365440.jpg" alt="Dinner Dash">     
+    <div class="fcontainer"> <!-- full container -->
+
+        <div class="lcontainer"> 
+            <!-- IMG left container -->
         </div>
 
-        <div class="div_text">
-            <h1>dinnerdash</h1>
-            <form>
-                    <p>Email</p>
-                     <input class="input_email" type="text" name="email"><br>
-                     <p>Senha</p>
-                     <input class="input_senha" name="senha"><br><br>
-                    
-                    <button class="button_entrar" type="submit"> Fazer login</button> <br>
-            </form>
-            
-            <hr class="text_hr"> 
-            <p> Não possui conta? </p>
-            <button class="button_cadastro" type="submit" >Fazer meu cadastro</button>
-
+        <div class="rcontainer"> <!-- right container -->
+            <div class="rcontent">
+                <h1>Dinnerdash</h1>
+                <div class="text_signin">
+                    <form>
+                        <p>Email</p>
+                        <input class="data_input input_email" name="input_email">
+                        <p>Senha</p>
+                        <input class="data_input input_password" name="input_password"><br>
+                        <button class="data_input button_signin" type="submit">Fazer login</button>
+                    </form>
+                </div>
+                <hr>
+                <div class="text_signup">
+                    <p>Não possui conta?</p>
+                    <button class="data_input button_signup" type="submit">Fazer meu cadastro</button>
+                </div>
+            </div>
         </div>
+
     </div>
+
 </body>
 
 </html>
